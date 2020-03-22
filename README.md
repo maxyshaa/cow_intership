@@ -14,5 +14,5 @@ This package implements linear univariate models with one random effect for the 
 
 **Installation**
 
-`pip install git+[https://github.com/maxyshaa/cow_intership.git]`
+`pip install git+https://github.com/maxyshaa/cow_intership.git`
 
