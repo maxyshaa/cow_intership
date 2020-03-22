@@ -7,8 +7,8 @@ This package implements linear univariate models with one random effect for the 
 **Requirements**
 
 - Python >= 3.6
-- Pandas
-- Numpy
+- Pandas >=0.24.2
+- NumPy >= 1.16.2
 
 
 
