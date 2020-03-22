@@ -6,7 +6,7 @@ setup(name='lm-pkg-Maksimova',
       url='https://github.com/maxyshaa/cow_intership.git',
       author='Ksenia Maximova',
       author_email='maxysha95@gmail.com',
-      packages= ['lm'],
+      packages= ['blup_animal'],
       classifiers=[
           "Programming Language :: Python :: 3",
           "License :: OSI Approved :: MIT License",
