@@ -6,7 +6,7 @@ This package implements linear univariate models with one random effect for the 
 
 **Requirements**
 
-- Python >= 3.5
+- Python >= 3.6
 - 
 
 
