@@ -1,4 +1,4 @@
-```python
+
 from setuptools import setup
 
 setup(
@@ -18,4 +18,4 @@ setup(
         "numpy>=1.16.2"
     ]
 )
-```
+
