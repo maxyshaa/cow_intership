@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
+from blup_animals import *
 
 
 
