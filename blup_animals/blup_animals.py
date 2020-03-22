@@ -1,17 +1,39 @@
-#import libraries
+# File containing architecture of animal model
+
+# The model is y_{i,j} = p_{i} + a_{j} + e_{i,j}
+
+# where y_{i,j} is the pre-weaning gain of jth calf
+# of the ith sex;
+# p_{i} is the fixed effect of ith sex;
+# a_{j} is random effect of the ith calf;
+# e_{i,j} is a random error effect;
+
+# The goal of model is to estimate the effects of sex
+# and predict breeding values for all animals
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-from sklearn.datasets import load_boston
+
+# Constructing the mixed model equations
+
+# import data
+
+def data_load(name):
+    # df = pd.read_csv("name")
+    # X = df.Sex.map({"Male": 1, "Female": 0})
+    # Z = 
+    # y = data.loc[: , ["WWG (kg)"]]
+    return None
 
 
 # define our cost function
 
 def compute_cost(X, y, params):
-    n_samples = len(y)
-    h = X @ params
-    return (1/(2*n_samples))*np.sum((h-y)**2)
-
+    # h = X @ params
+    # return (1/(2*n_samples))*np.sum((h-y)**2)
+    return None
 
 def gradient_descent(X, y, params, learning_rate, n_iters):
     n_samples = len(y)
@@ -26,33 +48,6 @@ def gradient_descent(X, y, params, learning_rate, n_iters):
 
 
 def linear_regression(X, y, n_iter=1500, lr=0.05):
-    # lr= learning_rate
+  return None
     
-    n_samples = len(y)
-    
-    mu = np.mean(X, 0)
-    sigma = np.std(X, 0)
-    X = (X-mu) / sigma
-    
-    X = np.hstack((np.ones((n_samples,1)),X))
-    n_features = np.size(X,1)
-    params = np.zeros((n_features,1))
-    
-    initial_cost = compute_cost(X, y, params)
-    print("Initial cost is: ", initial_cost, "\n")
-    (J_history, optimal_params) = gradient_descent(X, y, params, learning_rate, n_iters)
-    print("Optimal parameters are: \n", optimal_params, "\n")
-    print("Final cost is: ", J_history[-1])
-    plt.plot(range(len(J_history)), J_history, 'r')
-    plt.title("Convergence Graph of Cost Function")
-    plt.xlabel("Number of Iterations")
-    plt.ylabel("Cost")
-    plt.show()
-    
-    
-    
-dataset = load_boston()
-X = dataset.data
-y = dataset.target[:,np.newaxis]
-
-linear_regression(X, y)
+  
