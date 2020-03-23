@@ -1,4 +1,6 @@
-"""Module contains functions to obtain auxiliary matrices for the mixed model equation construction"""
+"""Module contains functions to obtain auxiliary matrices
+for the mixed model equation construction.
+"""
 
 
 import numpy as np
@@ -7,7 +9,7 @@ import pandas as pd
 
 def make_xyz(df: pd.DataFrame,
              response_var: str,
-             fixed_var: list) -> np.ndarray:
+             fixed_var: list = ['Sex']) -> np.ndarray:
     """Produce x, z, y matrices. x matrix corresponds to fixed effects,
      z matrix corresponds to records of all animals, y is a vector of observations.
 
